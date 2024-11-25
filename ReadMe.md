@@ -1,6 +1,9 @@
 # Kustomize Studies
 
-This repository aims to keep track of my kustomizes studies and POCs, in order of to be an easy way to refresh my knowledges
+This repository aims to show how Kustomize works, proposing to deploy two nginx applications on a local kubernetes cluster with specific customizations.
+The first one deployed on `dev` namespace represents an application on a development environment using a newer nginx version, where the second one deployed on `prod` namespaces represents an production application using a more stable nginx version with more replicas and high resources reservation
+
+![Architecture](./artifacts/pictures/architecture.png)
 
 For a quick explanation about Kustomize please check this [file](./01-Introduction.md)
 
