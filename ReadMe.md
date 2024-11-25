@@ -2,6 +2,8 @@
 
 This repository aims to keep track of my kustomizes studies and POCs, in order of to be an easy way to refresh my knowledges
 
+For a quick explanation about Kustomize please check this [file](./01-Introduction.md)
+
 ## Requisites
 ---
 
@@ -9,9 +11,6 @@ This repository aims to keep track of my kustomizes studies and POCs, in order o
 2. [Install Kind](https://kind.sigs.k8s.io/docs/user/quick-start)
 3. [Install Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
-## Introduction
----
-For a quick explanation about Kustomize check this [link](./01-Introduction.md)
 
 ## Setup
 ---
