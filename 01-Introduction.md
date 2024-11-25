@@ -47,25 +47,25 @@ Also, there are two types of overlay(patches)
 1. `JSON 6902` - Requiring to provide the **target** and the patch **details**
     ```yaml 
     patches:
-  - target:
-      kind: Deployment
-      name: nginx
-    patch: |-
-      - op: replace
-        path: /spec/replicas
-        value: 3
+    - target:
+        kind: Deployment
+        name: nginx
+        patch: |-
+        - op: replace
+            path: /spec/replicas
+            value: 3
     ```
 
 2. `Stragetic Merge` - Similar to standard k8s config, the result will be the base manifest with the configuration that we would like to change
     ```yaml
     patches:
-  - patch: |-
-      apiVersion: apps/v1
-      kind: Deployment
-      metadata:
-        name: nginx
-      spec:
-        replicas: 3
+    - patch: |-
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+            name: nginx
+        spec:
+            replicas: 3
     ```
 
 ### Transformers
